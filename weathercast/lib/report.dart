@@ -90,7 +90,7 @@ class _ReportState extends State<Report> {
     .catchError((error) {
         ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: text (error.toString()),
+          content: Text(error.toString()),
           duration: const Duration(days: 1),
         )
       );
